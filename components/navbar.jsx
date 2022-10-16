@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
         <div className= 'flex justify-between item-center w-full h-full px-2 2xl:px-16'>
             <Image 
-            src='/../public/assets/navlogo.png'
+            src='/Users/samuel_hawkins/Hawkins_Project1/portfolio-nextjs/public/assets/navLogo.png'
             alt='/' 
             width='125' 
             height='50' 
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'>
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Image src='/../public/assets/navlogo.png' width='87' height='35' alt='/'/> 
+              <Image src='/Users/samuel_hawkins/Hawkins_Project1/portfolio-nextjs/public/assets/logoicon/navLogo.png' width='87' height='35' alt='/'/> 
               <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                 <AiOutlineClose /> 
               </div>  
@@ -88,8 +88,8 @@ const Navbar = () => {
                     </Link>
                  </ul>
                  <div className='pt-40'>
-                    <p className='uppercase tracking-widest text-[#5651e5]'>
-                        Let's Connect 
+                    <p className='uppercase tracking-widest text-[hsl(245,97%,30%)]'>
+                        Let's Test
                         </p>
                     <div className='flex items-center justify-between my-4 w-ful sm;w-[80%]'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-3 hover:scale-105 ease-in duration-400'>
