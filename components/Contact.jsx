@@ -1,7 +1,9 @@
-import React from 'react'
-import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
+import React from 'react';
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import {HiOutlineChevronDoubleUp} from 'react-icons/hi';
+import Link from 'next/Link';
 
 const Contact = () => {
   return (
@@ -38,7 +40,7 @@ const Contact = () => {
                     </div>
         </div>
     </div>
-</div>
+ </div>
 </div>
 
 
@@ -82,20 +84,24 @@ const Contact = () => {
             <label className='uppercase text-sm py-2'>Message</label>
             <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
         </div>
+        <button className='w-full p-4 text-gray-100 mt-4 bg-[#5651e5] '>Send Message</button>
     </form>
-
-
-</div>
-
-
-</div>
-
-
-
-
-            </div>
         </div>
     </div>
+</div>
+ <div className='flex justify-center py-12'>
+
+    <Link href='/'>
+        <div className='rounded-full shadow-lg shadow-gray-400 p-4 hover:scale-110 ease-in duration-400'>
+            <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30}/>
+        </div>
+    </Link>
+
+      </div>
+
+
+    </div>
+  </div>
   )
 }
 
