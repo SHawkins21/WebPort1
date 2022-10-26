@@ -24,13 +24,16 @@ const Navbar = () => {
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
         <div className= 'flex justify-between item-center w-full h-full px-2 2xl:px-16'>
-        
+           <Link href='/'>
+
             <Image 
             src='/assets/navLogo.png'
             alt='/' 
             width='125' 
             height='50' 
             /> 
+           </Link>
+            
             {/*When importing an image there will be an error unless with and height are applied and must start with a 
             leading slash {src="/* <= indicated here  */}
         
@@ -75,7 +78,15 @@ const Navbar = () => {
                         }>
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Image src='/assets/navlogo.png' width='87' height='35' alt='/'/> 
+              <Link href='/'>
+                <Image 
+              src='/assets/navlogo.png' 
+              width='87' 
+              height='35' 
+              alt='/'
+              /> 
+              </Link>  
+              
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                 <AiOutlineClose /> 
               </div>  
@@ -89,23 +100,20 @@ const Navbar = () => {
                 <div className='py-4 flex flex-col'>
                  <ul className='uppercase'>
                     <Link href='/'>
-                     <li className='py-4 text-sm'>Home
+                     <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home
                      </li>
-                    </Link> <Link href='/'>
-                     <li className='py-4 text-sm'>About
+                    </Link> <Link href='/#about'>
+                     <li onClick={()=> setNav(false)} className='py-4 text-sm'>About
                      </li>
-                    </Link> <Link href='/'>
-                     <li className='py-4 text-sm'>Skills
+                    </Link> <Link href='/#skills'>
+                     <li onClick={()=> setNav(false)} className='py-4 text-sm'>Skills
                      </li>
-                    </Link> <Link href='/'>
-                     <li className='py-4 text-sm'>Projects
+                    </Link> <Link href='/#projects'>
+                     <li onClick={()=> setNav(false)} className='py-4 text-sm'>Projects
                      </li>
-                    </Link> <Link href='/'>
-                     <li className='py-4 text-sm'>Home
-                     </li>
-                    </Link>
-                    <Link href='/'>
-                     <li className='py-4 text-sm'>Contact
+                    </Link> 
+                    <Link href='/#contact'>
+                     <li onClick={()=> setNav(false)} className='py-4 text-sm'>Contact
                      </li>
                     </Link>
                  </ul>
